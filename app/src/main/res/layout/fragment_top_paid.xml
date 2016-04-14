@@ -1,0 +1,119 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.calendarquickstart.MainActivity"
+    android:paddingTop="47dp">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Settings"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:background="#90a4ae"
+            android:textColor="#f7f6f6" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#90a4ae">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="74dp"
+                        android:id="@+id/import_cal_btn"
+                        android:layout_weight="1.16"
+                        android:background="#90a4ae"
+                        android:src="@drawable/importcalendar" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Import Calendar"
+                        android:id="@+id/textView2"
+                        android:layout_weight="4"
+                        android:gravity="left|center"
+                        android:textColor="#f7f6f6"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="83dp"
+                        android:id="@+id/acct_management_btn"
+                        android:layout_weight="1.81"
+                        android:background="#90a4ae"
+                        android:src="@drawable/acctmanage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Account Management"
+                        android:id="@+id/textView3"
+                        android:layout_weight="4"
+                        android:gravity="left|center"
+                        android:textColor="#f7f6f6"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="25dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/logout_btn"
+                        android:layout_weight=".5"
+                        android:background="#90a4ae"
+                        android:src="@drawable/logout" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="Log Out"
+                        android:id="@+id/textView4"
+                        android:layout_weight="3.68"
+                        android:gravity="left|center"
+                        android:textColor="#f7f6f6"
+                        android:paddingTop="25dp"
+                        android:paddingBottom="25dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout>
